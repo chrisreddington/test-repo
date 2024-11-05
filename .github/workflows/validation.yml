@@ -1,0 +1,16 @@
+# .github/workflows/validation.yml
+
+name: Validate Repo
+
+on:
+  # Trigger on push to main branch
+  push:
+    branches:
+      - main
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    name: Call Workflow from chrisreddington/sample-actions
+    uses: chrisreddington/sample-actions/.github/workflows/devcontainer-validator.yml@main
