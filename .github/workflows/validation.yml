@@ -13,4 +13,4 @@ on:
 jobs:
   call-workflow:
     name: Call Workflow from chrisreddington/sample-actions
-    uses: chrisreddington/sample-actions/.github/workflows/devcontainer-validator.yml@main
+    uses: chrisreddington/sample-actions/.github/workflows/baseline-validator.yml@main
